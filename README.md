@@ -37,6 +37,10 @@ The console (`/`) now acts as a full landing experience: hero copy that distingu
 
 New features: a dropdown selector keeps the console focused on the chosen vertical, the dashboard now surfaces delta badges for total interactions/unique users, and the `/api/dashboard/verticals` endpoint powers the hero stats so every vertical can track interactions and course deliveries with goals attached (cleaning, photobooth, courses).
 
+## Run instructions
+
+This is a Node.js/Express app. Run it with `npm start` (or `node server.js`), not `gunicorn main:app`. If you see references to `main.py` or `gunicorn` in your Replit run configuration, switch the command to `npm start` so the Express server (not a Python module) launches.  
+
 ## Additional service verticals
 
 The same stack works for any service business: plumbing, electricians, hair salons/barbers, fitness studios/personal training, car detailing, HVAC, landscaping, tutoring/online courses, photography, and nail salons. Every module (voice assistant, booking, lead gen, marketing, reviews, retention, upsells, follow-ups, referrals, reels) plugs into the dropdown and dashboards so operators see the impact without touching the API.
