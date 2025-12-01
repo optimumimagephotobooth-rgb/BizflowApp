@@ -47,15 +47,15 @@ The same stack works for any service business: plumbing, electricians, hair salo
 
 ## Growth toolkit
 
-Inside `/` you’ll now find an “AI Growth Toolkit” that lists every packaged service (AI Voice Assistant, Booking System, Lead Generator, Email Marketing, Review Management, Retention, Upsell, Quote Follow-ups, Referral, Video Reel Generator) with pricing (e.g., `£70/month` for 24/7 voice assistant). Each card lets you choose the matching vertical—when you click “Activate”, the UI focuses the checklist, dashboards, and SendGrid widget on that business line so the toolkit feels like a real product catalog.
+Inside `/` you’ll now find an “AI Growth Toolkit” that lists every packaged service (AI Voice Assistant, Booking System, Lead Generator, Email Marketing, Review Management, Retention, Upsell, Quote Follow-ups, Referral, Video Reel Generator) with pricing (just `£29.99` per tool so each module feels affordable). Each card lets you choose the matching vertical—when you click “Activate”, the UI focuses the checklist, dashboards, and SendGrid widget on that business line so the toolkit feels like a real product catalog.
 
 The customer interaction form now ships with pre-built AI marketing templates (capture course links, review requests, booking confirmations, lead follow-ups, upsell pitches). Selecting a template auto-populates the message and tags the interaction with the correct `business_type`, so every prompt turns into measurable pipeline activity.
 
 ## AI playbooks
 
-The playbook library now includes lead generation blitz, course upsell + email, review + referral loop, a retention check-in, an upsell promo burst, and an event social push. Each playbook costs £12/month per activation, and clicking “Run this playbook” activates the matching vertical, selects the template, and queues the KPI snapshot so the operator immediately sees the tracked impact.
+The console now ships with ten plumber-friendly playbooks priced at £12 each. Each card explains the “what” in plain language (e.g., “Get more customers automatically,” “Stop missing calls & messages,” “Quick quotes without the hassle,” “A clear plan to start today”) and lists what the operator will gain, like instant replies, booking links, review reminders, or routine checklists. Running a playbook still sets the vertical, loads the correct template, logs the interaction, and refreshes the KPI stats.
 
-Each playbook speaks the jargon of the vertical (e.g., “closing plumbing jobs” or “getting photobooth reviews”) and auto-populates the message so service owners feel it’s doing the job for them.
+The layout has also shifted to tabbed panels (Playbooks, Dashboard, Pricing, Insights) so the most important sections show in digestible chunks instead of one long page. This keeps the experience light, structured, and easy to navigate for non-technical teams.
 
 ## Tiered pricing guide
 

@@ -234,6 +234,55 @@ main {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
+.tab-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tab-nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab-button {
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: transparent;
+  color: #e2e8f0;
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.6);
+  color: #fff;
+}
+
+.tab-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tab-panel.hidden {
+  display: none;
+}
+
 .feature-card {
   background: rgba(59, 130, 246, 0.1);
   border-radius: 18px;
@@ -482,6 +531,37 @@ main {
   margin: 0.5rem 0 0;
   font-size: 0.9rem;
   color: #cbd5f5;
+}
+
+.playbook-outcomes {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.playbook-outcomes li:before {
+  content: '•';
+  color: #34d399;
+  margin-right: 0.4rem;
+}
+
+.run-playbook {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  background: transparent;
+}
+
+.playbook-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .tier-card {

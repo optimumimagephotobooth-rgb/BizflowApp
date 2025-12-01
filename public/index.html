@@ -36,319 +36,302 @@
     <p id="vertical-description" class="muted">Focus on bookings, confirmations, and AI follow-ups.</p>
   </section>
 
-  <section class="story-card">
-    <div>
-      <h2>Bob the plumber skipped tech school—he just wanted more jobs.</h2>
-      <p>Bob never did IT after 7th grade, but BizflowApp lets him run voice assistants, lead-gen prompts, and review requests without learning anything new. He clicks a playbook, the ready-made message drops in, and his dashboard updates with the new profit. No scary AI lingo—just a tool that speaks plumber.</p>
-      <p class="helper-copy">See how Bob goes from missed calls to steady growth with our simple playbooks.</p>
-    </div>
-    <div class="story-steps">
-      <div><strong>1.</strong> Pick a playbook that fits your day (like “Lead blitz”).</div>
-      <div><strong>2.</strong> Press Run—the message and workflow pre-fill for you.</div>
-      <div><strong>3.</strong> Watch Delta badges, WhatsApp shares, and KPI posts prove the ROI.</div>
-    </div>
-  </section>
+  <div class="tab-wrapper">
+    <nav class="tab-nav">
+      <button class="tab-button active" data-tab="playbooks">Playbooks</button>
+      <button class="tab-button" data-tab="dashboard">Dashboard</button>
+      <button class="tab-button" data-tab="pricing">Pricing</button>
+      <button class="tab-button" data-tab="insights">Insights</button>
+    </nav>
+    <div class="tab-panels">
+      <section class="tab-panel" data-tab-content="playbooks">
+        <section class="story-card">
+          <div>
+            <h2>Bob the plumber skipped tech school—he just wanted more jobs.</h2>
+            <p>Bob never did IT after 7th grade, but BizflowApp lets him run voice assistants, lead-gen prompts, and review requests without learning anything new. He clicks a playbook, the ready-made message drops in, and his dashboard updates with the new profit. No scary AI lingo—just a tool that speaks plumber.</p>
+            <p class="helper-copy">See how Bob goes from missed calls to steady growth with our simple playbooks.</p>
+          </div>
+          <div class="story-steps">
+            <div><strong>1.</strong> Pick a playbook that fits your day (like “Lead blitz”).</div>
+            <div><strong>2.</strong> Press Run—the message and workflow pre-fill for you.</div>
+            <div><strong>3.</strong> Watch Delta badges, WhatsApp shares, and KPI posts prove the ROI.</div>
+          </div>
+        </section>
 
-  <section class="video-card">
-    <div class="card-head">
-      <h2>See BizflowApp in action</h2>
-      <p>Watch a quick clip showing how a real plumber runs playbooks without learning tech.</p>
-    </div>
-    <video autoplay muted loop playsinline preload="metadata" poster="/video-poster.jpg">
-      <source src="/BizflowApp_Simple_Business.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </section>
+        <section class="video-card">
+          <div class="card-head">
+            <h2>See BizflowApp in action</h2>
+            <p>Watch a quick clip showing how a real plumber runs playbooks without learning tech.</p>
+          </div>
+          <video autoplay muted loop playsinline preload="metadata" poster="/video-poster.jpg">
+            <source src="/BizflowApp_Simple_Business.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </section>
 
-  <section class="hero-features">
-    <div class="feature-card">
-      <h3>Cleaning Services</h3>
-      <p>Streamline bookings, assign teams, send reminders, and log feedback from Supabase-managed scheduling.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Photobooth Business</h3>
-      <p>Manage rentals, event staff, and the Gold Wealth Academy brand across locations with real-time tip/donation views.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Gold Wealth Academy (course storefront)</h3>
-      <p>Deliver e-books, send course access links via SendGrid, and track digital orders with Stripe/Supabase while keeping course fulfillment distinct from the AI agent.</p>
-    </div>
-  </section>
+        <section class="card growth-toolkit" id="growth-toolkit-card">
+          <div class="card-head">
+            <h2>AI Growth Toolkit</h2>
+            <p>Pick a playbook, press “Activate,” and the app handles the rest—no big tech skills needed.</p>
+          </div>
+          <div class="toolkit-grid" id="toolkit-grid"></div>
+          <p class="helper-copy">Each card contains a friendly script and guidance—click “Activate” to see the KPIs tick up.</p>
+        </section>
 
-  <section class="card security-card">
-    <div class="card-head">
-      <h2>Security & trust</h2>
-      <p>Fortified for service businesses: encrypted data, access controls, and reliable uptime.</p>
-    </div>
-    <div class="security-grid">
-      <div class="badge">🔒 PCI-aligned</div>
-      <div class="badge">🛡️ API key protection</div>
-      <div class="badge">🗂️ RLS-ready Supabase</div>
-      <div class="badge">🧰 Weekly audits</div>
-      <div class="badge">⚙️ 99.9% uptime</div>
-    </div>
-  </section>
+        <section class="card playbook-card" id="playbook-card">
+          <div class="card-head">
+            <h2>Recommended playbooks</h2>
+            <p>Launch sequences for lead capture, bookings, upsells, and referrals without writing extra copy.</p>
+          </div>
+          <div class="playbook-grid" id="playbook-grid"></div>
+          <p class="helper-copy">Playbooks speak your language—run them and we’ll automate the boring bits.</p>
+        </section>
 
-  <section class="service-carousel">
-    <h2>Works for any service business</h2>
-    <div class="service-grid">
-      <span>🔧 Plumbing services</span>
-      <span>💡 Electrician services</span>
-      <span>💇 Hair salons / barbershops</span>
-      <span>🏋️ Fitness studios / personal training</span>
-      <span>🚗 Car detailing / auto services</span>
-      <span>🏠 HVAC / heating services</span>
-      <span>🌳 Landscaping services</span>
-      <span>🎓 Tutoring / online courses</span>
-      <span>📸 Photography services</span>
-      <span>💅 Nail salons</span>
-    </div>
-  </section>
+        <section class="card roi-card">
+          <div class="card-head">
+            <h2>ROI proof</h2>
+            <p>Every playbook activation refreshes the dashboard, updates delta badges, and lets you share the KPI snapshot so you see the impact before you pay.</p>
+          </div>
+          <div class="roi-points">
+            <p>✅ Base tier absorbs call/booking automation so you skip hiring £1k/month staff.</p>
+            <p>✅ Growth tier nudges reviews, upsells, and retention—watch the delta badges climb after each playbook.</p>
+            <p>✅ Premium tier adds course delivery + video reels; the WhatsApp share button lets you broadcast wins instantly.</p>
+          </div>
+          <div class="roi-banner">
+            <p>Annual payment (2 months free) + one free £12 playbook for 30 days when you join today.</p>
+          </div>
+          <div class="offer-card">
+            <h3>Limited-time offer</h3>
+            <p id="offer-countdown">Offer ends soon—claim free months.</p>
+            <button id="claim-offer" class="pill mini">Claim 2 months free</button>
+            <p id="offer-feedback" class="muted"></p>
+          </div>
+        </section>
 
-  <section class="card tier-card" id="pricing-card">
-    <div class="card-head">
-      <h2>Tiered pricing plans</h2>
-      <p>Pick the level that matches your growth stage. All tiers include the console, onboarding, and dashboards. Add £12 playbooks as needed.</p>
-    </div>
-    <div class="tier-grid" id="tier-grid"></div>
-  </section>
+        <section class="card engagement-card" id="engagement-card">
+          <div class="card-head">
+            <h2>Playbook engagement</h2>
+            <p>We highlight the scripts your team runs most so best sellers are front and center.</p>
+          </div>
+          <ul id="engagement-list"></ul>
+        </section>
+      </section>
 
-  <section class="card roi-card">
-    <div class="card-head">
-      <h2>ROI proof</h2>
-      <p>Every playbook activation refreshes the dashboard, updates delta badges, and lets you share the KPI snapshot so you see the impact before you pay.</p>
-    </div>
-    <div class="roi-points">
-      <p>✅ Base tier absorbs call/booking automation so you skip hiring £1k/month staff.</p>
-      <p>✅ Growth tier nudges reviews, upsells, and retention—watch the delta badges climb after each playbook.</p>
-      <p>✅ Premium tier adds course delivery + video reels; the WhatsApp share button lets you broadcast wins instantly.</p>
-    </div>
-    <div class="roi-banner">
-      <p>Annual payment (2 months free) + one free £12 playbook for 30 days when you join today.</p>
-    </div>
-    <div class="offer-card">
-      <h3>Limited-time offer</h3>
-      <p id="offer-countdown">Offer ends soon—claim free months.</p>
-      <button id="claim-offer" class="pill mini">Claim 2 months free</button>
-      <p id="offer-feedback" class="muted"></p>
-    </div>
-  </section>
+      <section class="tab-panel hidden" data-tab-content="dashboard">
+        <section class="hero-features">
+          <div class="feature-card">
+            <h3>Cleaning Services</h3>
+            <p>Streamline bookings, assign teams, send reminders, and log feedback from Supabase-managed scheduling.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Photobooth Business</h3>
+            <p>Manage rentals, event staff, and the Gold Wealth Academy brand across locations with real-time tip/donation views.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Gold Wealth Academy (course storefront)</h3>
+            <p>Deliver e-books, send course access links via SendGrid, and track digital orders with Stripe/Supabase while keeping course fulfillment distinct from the AI agent.</p>
+          </div>
+        </section>
 
-  <section class="card engagement-card" id="engagement-card">
-    <div class="card-head">
-      <h2>Playbook engagement</h2>
-      <p>We highlight the scripts your team runs most so best sellers are front and center.</p>
-    </div>
-    <ul id="engagement-list"></ul>
-  </section>
+        <section class="service-carousel">
+          <h2>Works for any service business</h2>
+          <div class="service-grid">
+            <span>🔧 Plumbing services</span>
+            <span>💡 Electrician services</span>
+            <span>💇 Hair salons / barbershops</span>
+            <span>🏋️ Fitness studios / personal training</span>
+            <span>🚗 Car detailing / auto services</span>
+            <span>🏠 HVAC / heating services</span>
+            <span>🌳 Landscaping services</span>
+            <span>🎓 Tutoring / online courses</span>
+            <span>📸 Photography services</span>
+            <span>💅 Nail salons</span>
+          </div>
+        </section>
 
-  <section class="card vertical-stats-card">
-    <div class="card-head">
-      <h2>Results by business line</h2>
-      <p>Track Ai interactions, course deliveries, and progress towards your vertical goals.</p>
-    </div>
-    <div class="grid" id="vertical-stats"></div>
-  </section>
+        <section class="card vertical-stats-card">
+          <div class="card-head">
+            <h2>Results by business line</h2>
+            <p>Track Ai interactions, course deliveries, and progress towards your vertical goals.</p>
+          </div>
+          <div class="grid" id="vertical-stats"></div>
+        </section>
 
-  <section class="verticals">
-    <div class="vertical">
-      <h2>Customer booking & ops</h2>
-      <p>Cleaning and photobooth admins inherit unified dashboards, role-based access, and automatic confirmations—plus AI follow-up suggestions through the Experience Agent.</p>
-    </div>
-    <div class="vertical">
-      <h2>E-commerce & courses</h2>
-      <p>Gold Wealth Academy sells digital content, handles Stripe payments, and automatically emails secure access links. Hand the Experience Agent the job of follow-up to close more upsells.</p>
-    </div>
-    <div class="vertical">
-      <h2>Analytics & loyalty</h2>
-      <p>Dashboards track total bookings, tips, course sales, and agent interactions at a glance. Feed every KPI into `/api/dashboard/summary` to keep stakeholders informed.</p>
-    </div>
-  </section>
+        <section class="verticals">
+          <div class="vertical">
+            <h2>Customer booking & ops</h2>
+            <p>Cleaning and photobooth admins inherit unified dashboards, role-based access, and automatic confirmations—plus AI follow-up suggestions through the Experience Agent.</p>
+          </div>
+          <div class="vertical">
+            <h2>E-commerce & courses</h2>
+            <p>Gold Wealth Academy sells digital content, handles Stripe payments, and automatically emails secure access links. Hand the Experience Agent the job of follow-up to close more upsells.</p>
+          </div>
+          <div class="vertical">
+            <h2>Analytics & loyalty</h2>
+            <p>Dashboards track total bookings, tips, course sales, and agent interactions at a glance. Feed every KPI into `/api/dashboard/summary` to keep stakeholders informed.</p>
+          </div>
+        </section>
 
-  <section class="course-widget">
-    <div class="course-copy">
-      <h2>Gold Wealth Academy stays separate</h2>
-      <p>This course storefront is adjacent to the AI Growth Engine. Log each SendGrid delivery here so the experience stays visible without confusing the course workflow.</p>
-      <p id="course-status" class="muted">No course deliveries logged yet.</p>
-    </div>
-    <form id="course-notify-form" class="form-grid">
-      <label>
-        Customer email
-        <input type="email" id="course-email" placeholder="student@example.com" required>
-      </label>
-      <label>
-        Course title
-        <input type="text" id="course-title" placeholder="Gold Wealth Blueprint" required>
-      </label>
-      <label>
-        SendGrid note
-        <textarea id="course-note" rows="2" placeholder="Access link delivered via SendGrid"></textarea>
-      </label>
-      <button type="submit">Log course delivery</button>
-    </form>
-  </section>
-
-  <section class="course-widget">
-    <div class="course-copy">
-      <h2>Gold Wealth Academy stays separate</h2>
-      <p>The Gold Wealth Academy course platform is different from the AI Growth Engine, but now sits beside it in Replit. Use this section to log course deliveries, track SendGrid confirmations, and keep the course brand distinct.</p>
-      <p id="course-status" class="muted">No course deliveries logged yet.</p>
-    </div>
-    <form id="course-notify-form" class="form-grid">
-      <label>
-        Customer email
-        <input type="email" id="course-email" placeholder="student@example.com" required>
-      </label>
-      <label>
-        Course title
-        <input type="text" id="course-title" placeholder="Gold Wealth Blueprint" required>
-      </label>
-      <label>
-        SendGrid note
-        <textarea id="course-note" rows="2" placeholder="SendGrid confirmed access link"></textarea>
-      </label>
-      <button type="submit">Log course delivery</button>
-    </form>
-  </section>
-
-  <section class="card growth-toolkit" id="growth-toolkit-card">
-    <div class="card-head">
-      <h2>AI Growth Toolkit</h2>
-      <p>Pick a playbook, press “Activate,” and the app handles the rest—no big tech skills needed.</p>
-    </div>
-    <div class="toolkit-grid" id="toolkit-grid"></div>
-    <p class="helper-copy">Each card contains a friendly script and guidance—click “Activate” to see the KPIs tick up.</p>
-  </section>
-
-  <section class="card playbook-card" id="playbook-card">
-    <div class="card-head">
-      <h2>Recommended playbooks</h2>
-      <p>Launch sequences for lead capture, bookings, upsells, and referrals without writing extra copy.</p>
-    </div>
-    <div class="playbook-grid" id="playbook-grid"></div>
-    <p class="helper-copy">Playbooks speak your language—run them and we’ll automate the boring bits.</p>
-  </section>
-
-  <section class="card insights-card" id="insights-card">
-    <div class="card-head">
-      <h2>AI insights & alerts</h2>
-      <p id="insights-summary" class="muted">We’ll surface action-ready growth ideas after every refresh.</p>
-    </div>
-    <div class="insight-actions">
-      <button id="whatsapp-share" class="pill mini">Share KPI via WhatsApp</button>
-      <button id="notify-teams" class="pill mini ghost">Copy quick alert</button>
-      <span id="alert-feedback" class="muted"></span>
-    </div>
-    <p class="helper-copy">We craft the short update—share it, copy it, or just let it remind you why you’re winning.</p>
-  </section>
-
-  <section class="card growth-card" id="growth-checklist-card">
-    <div class="card-head">
-      <h2>AI growth checklist</h2>
-      <p>Follow these trust-building steps to confirm the Experience Agent is driving bookings, tips, and course sales.</p>
-      <p id="growth-tip" class="muted">Focus on bookings, confirmations, and AI follow-ups.</p>
-    </div>
-    <ul class="checklist" id="growth-checklist"></ul>
-  </section>
-
-  <main>
-    <section class="card" id="onboarding-card">
-      <div class="card-head">
-        <h2>Guided onboarding steps</h2>
-        <p id="onboarding-status">Loading steps…</p>
-      </div>
-      <div class="grid" id="onboarding-steps"></div>
-      <form id="progress-form" class="form-grid">
-        <h3>Mark step complete</h3>
-        <label>
-          User ID
-          <input type="text" id="progress-user" placeholder="user_123" required>
-        </label>
-        <label>
-          Step
-          <select id="progress-step" required>
-            <option value="">Select step</option>
-          </select>
-        </label>
-        <label class="checkbox">
-          <input type="checkbox" id="progress-completed" checked>
-          Completed
-        </label>
-        <label>
-          Metadata (JSON)
-          <textarea id="progress-meta" rows="2" placeholder='{"source":"console"}'></textarea>
-        </label>
-        <button type="submit" class="primary">Save progress</button>
-        <div class="form-feedback" id="progress-feedback"></div>
-      </form>
-    </section>
-
-    <section class="card" id="dashboard-card">
-      <h2>Live dashboard summary</h2>
-      <div class="summary-grid" id="dashboard-summary">
-        <div>
-          <span>Total interactions</span>
-          <strong id="metric-total">—</strong>
-          <span class="delta-badge" id="delta-total">—</span>
-        </div>
-        <div>
-          <span>Unique users</span>
-          <strong id="metric-unique">—</strong>
-          <span class="delta-badge" id="delta-unique">—</span>
-        </div>
-        <div>
-          <span>Status</span>
-          <strong id="metric-status">—</strong>
-        </div>
-      </div>
-      <p id="dashboard-note" class="muted">Pulling stats…</p>
-      <div class="share-actions">
-        <button id="share-summary-btn" class="pill primary">Copy KPI snapshot</button>
-        <span class="muted" id="share-feedback"></span>
-      </div>
-
-      <div class="grid">
-        <div>
-          <h3>Recent interactions</h3>
-          <ul id="recent-interactions"></ul>
-        </div>
-        <div>
-          <h3>Customer interaction log</h3>
-          <form id="interaction-form" class="form-grid">
+        <section class="course-widget">
+          <div class="course-copy">
+            <h2>Gold Wealth Academy stays separate</h2>
+            <p>This course storefront is adjacent to the AI Growth Engine. Log each SendGrid delivery here so the experience stays visible without confusing the course workflow.</p>
+            <p id="course-status" class="muted">No course deliveries logged yet.</p>
+          </div>
+          <form id="course-notify-form" class="form-grid">
             <label>
-              AI template
-              <select id="prompt-template">
-                <option value="">Choose a template</option>
-              </select>
+              Customer email
+              <input type="email" id="course-email" placeholder="student@example.com" required>
             </label>
+            <label>
+              Course title
+              <input type="text" id="course-title" placeholder="Gold Wealth Blueprint" required>
+            </label>
+            <label>
+              SendGrid note
+              <textarea id="course-note" rows="2" placeholder="Access link delivered via SendGrid"></textarea>
+            </label>
+            <button type="submit">Log course delivery</button>
+          </form>
+        </section>
+
+        <section class="card" id="onboarding-card">
+          <div class="card-head">
+            <h2>Guided onboarding steps</h2>
+            <p id="onboarding-status">Loading steps…</p>
+          </div>
+          <div class="grid" id="onboarding-steps"></div>
+          <form id="progress-form" class="form-grid">
+            <h3>Mark step complete</h3>
             <label>
               User ID
-              <input type="text" id="interaction-user" placeholder="user_123" required>
+              <input type="text" id="progress-user" placeholder="user_123" required>
             </label>
             <label>
-              Message
-              <textarea id="interaction-message" rows="2" required></textarea>
+              Step
+              <select id="progress-step" required>
+                <option value="">Select step</option>
+              </select>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id="progress-completed" checked>
+              Completed
             </label>
             <label>
-              Agent response
-              <textarea id="interaction-response" rows="2"></textarea>
+              Metadata (JSON)
+              <textarea id="progress-meta" rows="2" placeholder='{"source":"console"}'></textarea>
             </label>
-            <button type="submit">Save interaction</button>
-            <div class="form-feedback" id="interaction-feedback"></div>
+            <button type="submit" class="primary">Save progress</button>
+            <div class="form-feedback" id="progress-feedback"></div>
           </form>
-          <form id="interaction-query" class="form-grid">
-            <label>
-              Fetch history for user
-              <input type="text" id="history-user" placeholder="user_123" required>
-            </label>
-            <button type="submit">Load history</button>
-          </form>
-          <ul id="history-list"></ul>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
 
+        <section class="card" id="dashboard-card">
+          <h2>Live dashboard summary</h2>
+          <div class="summary-grid" id="dashboard-summary">
+            <div>
+              <span>Total interactions</span>
+              <strong id="metric-total">—</strong>
+              <span class="delta-badge" id="delta-total">—</span>
+            </div>
+            <div>
+              <span>Unique users</span>
+              <strong id="metric-unique">—</strong>
+              <span class="delta-badge" id="delta-unique">—</span>
+            </div>
+            <div>
+              <span>Status</span>
+              <strong id="metric-status">—</strong>
+            </div>
+          </div>
+          <p id="dashboard-note" class="muted">Pulling stats…</p>
+          <div class="share-actions">
+            <button id="share-summary-btn" class="pill primary">Copy KPI snapshot</button>
+            <span class="muted" id="share-feedback"></span>
+          </div>
+
+          <div class="grid">
+            <div>
+              <h3>Recent interactions</h3>
+              <ul id="recent-interactions"></ul>
+            </div>
+            <div>
+              <h3>Customer interaction log</h3>
+              <form id="interaction-form" class="form-grid">
+                <label>
+                  AI template
+                  <select id="prompt-template">
+                    <option value="">Choose a template</option>
+                  </select>
+                </label>
+                <label>
+                  User ID
+                  <input type="text" id="interaction-user" placeholder="user_123" required>
+                </label>
+                <label>
+                  Message
+                  <textarea id="interaction-message" rows="2" required></textarea>
+                </label>
+                <label>
+                  Agent response
+                  <textarea id="interaction-response" rows="2"></textarea>
+                </label>
+                <button type="submit">Save interaction</button>
+                <div class="form-feedback" id="interaction-feedback"></div>
+              </form>
+              <form id="interaction-query" class="form-grid">
+                <label>
+                  Fetch history for user
+                  <input type="text" id="history-user" placeholder="user_123" required>
+                </label>
+                <button type="submit">Load history</button>
+              </form>
+              <ul id="history-list"></ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-panel hidden" data-tab-content="pricing">
+        <section class="card tier-card" id="pricing-card">
+          <div class="card-head">
+            <h2>Tiered pricing plans</h2>
+            <p>Pick the level that matches your growth stage. All tiers include the console, onboarding, and dashboards. Add £12 playbooks as needed.</p>
+          </div>
+          <div class="tier-grid" id="tier-grid"></div>
+        </section>
+
+        <section class="card security-card">
+          <div class="card-head">
+            <h2>Security & trust</h2>
+            <p>Fortified for service businesses: encrypted data, access controls, and reliable uptime.</p>
+          </div>
+          <div class="security-grid">
+            <div class="badge">🔒 PCI-aligned</div>
+            <div class="badge">🛡️ API key protection</div>
+            <div class="badge">🗂️ RLS-ready Supabase</div>
+            <div class="badge">🧰 Weekly audits</div>
+            <div class="badge">⚙️ 99.9% uptime</div>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-panel hidden" data-tab-content="insights">
+        <section class="card insights-card" id="insights-card">
+          <div class="card-head">
+            <h2>AI insights & alerts</h2>
+            <p id="insights-summary" class="muted">We’ll surface action-ready growth ideas after every refresh.</p>
+          </div>
+          <div class="insight-actions">
+            <button id="whatsapp-share" class="pill mini">Share KPI via WhatsApp</button>
+            <button id="notify-teams" class="pill mini ghost">Copy quick alert</button>
+            <span id="alert-feedback" class="muted"></span>
+          </div>
+          <p class="helper-copy">We craft the short update—share it, copy it, or just let it remind you why you’re winning.</p>
+        </section>
+      </section>
+    </div>
+  </div>
   <footer>
     <p>Endpoints available for plugging into your SaaS demos.</p>
   </footer>
@@ -364,19 +347,19 @@
       {
         id: 'base',
         title: 'Base tier',
-        price: '£90/mo',
+        price: '£9/day',
         desc: 'Voice Assistant + Booking System + Lead Generator. Perfect for capturing bookings and leads.',
       },
       {
         id: 'growth',
         title: 'Growth tier',
-        price: '£150/mo',
+        price: '£15/day',
         desc: 'Includes Email Marketing, Review Management, Retention, Upsells plus 2 playbooks.',
       },
       {
         id: 'premium',
         title: 'Premium tier',
-        price: '£220/mo',
+        price: '£20/day',
         desc: 'Everything above plus Course Delivery automation, WhatsApp insights, and Video Reel Generator.',
       },
     ]
@@ -430,6 +413,8 @@
     const courseTitle = document.getElementById('course-title')
     const courseNote = document.getElementById('course-note')
     const toolkitGrid = document.getElementById('toolkit-grid')
+    const promptTemplateSelect = document.getElementById('prompt-template')
+    const playbookGrid = document.getElementById('playbook-grid')
     let latestDashboardSnapshot = null
     let previousDashboardSnapshot = null
     let activeBusinessType = businessSelector?.value || 'cleaning'
@@ -460,16 +445,16 @@
     }
 
     const toolkitServices = [
-      { label: 'AI Voice Assistant', price: '£70/month', description: '24/7 phone answering', business_type: 'cleaning' },
-      { label: 'AI Booking System', price: '£60/month', description: 'Automate scheduling + confirmations', business_type: 'cleaning' },
-      { label: 'AI Lead Generator', price: '£60/month', description: 'Capture new leads via AI prompts', business_type: 'photobooth' },
-      { label: 'Email Marketing', price: '£50/month', description: 'Send campaign + course links via SendGrid', business_type: 'courses' },
-      { label: 'Review Management', price: '£50/month', description: 'Automate review asks after each job', business_type: 'photobooth' },
-      { label: 'Retention System', price: '£45/month', description: 'Follow ups for recurring bookings', business_type: 'cleaning' },
-      { label: 'Upsell Engine', price: '£35/month', description: 'Suggest add-ons mid-event', business_type: 'photobooth' },
-      { label: 'Quote Follow-ups', price: '£40/month', description: 'Touch every quote with AI reminders', business_type: 'cleaning' },
-      { label: 'Referral Engine', price: '£30/month', description: 'Prompt happy customers for referrals', business_type: 'photobooth' },
-      { label: 'Video Reel Generator', price: '£20/month', description: 'Create quick reels for social proof', business_type: 'photobooth' },
+      { label: 'AI Voice Assistant', price: '£29.99 each', description: '24/7 phone answering', business_type: 'cleaning' },
+      { label: 'AI Booking System', price: '£29.99 each', description: 'Automate scheduling + confirmations', business_type: 'cleaning' },
+      { label: 'AI Lead Generator', price: '£29.99 each', description: 'Capture new leads via AI prompts', business_type: 'photobooth' },
+      { label: 'Email Marketing', price: '£29.99 each', description: 'Send campaign + course links via SendGrid', business_type: 'courses' },
+      { label: 'Review Management', price: '£29.99 each', description: 'Automate review asks after each job', business_type: 'photobooth' },
+      { label: 'Retention System', price: '£29.99 each', description: 'Follow ups for recurring bookings', business_type: 'cleaning' },
+      { label: 'Upsell Engine', price: '£29.99 each', description: 'Suggest add-ons mid-event', business_type: 'photobooth' },
+      { label: 'Quote Follow-ups', price: '£29.99 each', description: 'Touch every quote with AI reminders', business_type: 'cleaning' },
+      { label: 'Referral Engine', price: '£29.99 each', description: 'Prompt happy customers for referrals', business_type: 'photobooth' },
+      { label: 'Video Reel Generator', price: '£29.99 each', description: 'Create quick reels for social proof', business_type: 'photobooth' },
     ]
 
     const selectTemplateForService = (service) => {
@@ -550,10 +535,6 @@
       },
     ]
 
-    const toolkitGrid = document.getElementById('toolkit-grid')
-    const promptTemplateSelect = document.getElementById('prompt-template')
-    const playbookGrid = document.getElementById('playbook-grid')
-
     const renderPromptTemplates = () => {
       promptTemplateSelect.innerHTML = '<option value="">Choose a template</option>'
       promptTemplates.forEach((template) => {
@@ -584,64 +565,134 @@
 
     const playbooks = [
       {
-        id: 'lead-gen',
-        title: 'Lead generation blitz',
-        desc: 'Voice + lead generator + templated follow-up to convert inbound interest.',
+        id: 'customers-auto',
+        title: 'Get more customers automatically',
+        desc: 'Replies that handle new inquiries 24/7 so you never miss a job while on site.',
         business: 'cleaning',
         template: 'lead-generation',
         price: '£12',
-        jargon: 'cleaning crews chasing new jobs',
-        guidance: 'Reroute every inquiry into a yes-within-24-hours text and auto-confirm slot.'
+        outcomes: [
+          'Replies that fire instantly when you are busy',
+          'Feels like texting back without using your phone',
+          'More leads booked while you stay hands-on',
+        ],
       },
       {
-        id: 'course-sell',
-        title: 'Course upsell + email',
-        desc: 'Email Marketing + course delivery prompt + KPI snapshot share.',
-        business: 'courses',
-        template: 'email-marketing',
+        id: 'calls-messages',
+        title: 'Stop missing calls & messages',
+        desc: 'Capture every ring with friendly templates that reassure callers you’ll be right back.',
+        business: 'cleaning',
+        template: 'voice-assistant',
         price: '£12',
-        jargon: 'Gold Wealth Academy course launch',
-        guidance: 'Send access link + social proof screenshot to reduce manual emails.'
+        outcomes: [
+          'Instant auto replies when under the van',
+          'Professional messaging even mid-job',
+          'Customers don’t forget to say yes',
+        ],
       },
       {
-        id: 'review-referral',
-        title: 'Review & referral loop',
-        desc: 'Review Management + Referral Engine template for happy guests.',
+        id: 'booking-system',
+        title: 'Easy job booking system',
+        desc: 'Simple booking links, confirmations, and reminders so customers can self-serve.',
+        business: 'cleaning',
+        template: 'booking',
+        price: '£12',
+        outcomes: [
+          'Booking page anyone can use',
+          '“Tech is on the way” confirmations',
+          'Auto reminders that cut no-shows',
+        ],
+      },
+      {
+        id: 'quick-quotes',
+        title: 'Quick quotes without the hassle',
+        desc: 'Send crystal-clear quotes with the right price guide in seconds.',
+        business: 'cleaning',
+        template: 'quote',
+        price: '£12',
+        outcomes: [
+          'Plug-and-play price tables',
+          'Messages that explain the job clearly',
+          'Quote calculator for consistent pricing',
+        ],
+      },
+      {
+        id: 'five-star',
+        title: 'Get more 5-star reviews',
+        desc: 'Ask for reviews the easy way and follow up with polite reminders.',
         business: 'photobooth',
         template: 'review-request',
         price: '£12',
-        jargon: 'photobooth hosts wanting five-star bursts',
-        guidance: 'Drop a “thank you” + referral ask right after the event reel drops.'
+        outcomes: [
+          'Review requests plus thank-you notes',
+          'Auto follow-ups for forgetful guests',
+          'Polite replies for every new review',
+        ],
       },
       {
-        id: 'retention-check',
-        title: 'Retention check-in',
-        desc: 'Retention System + quote follow-up template to keep recurring customers booked.',
-        business: 'HVAC',
-        template: 'lead-generation',
-        price: '£12',
-        jargon: 'HVAC crews filling seasonal slots',
-        guidance: 'Ping thermostat customers quarterly with a tune-up reminder and limited-time discount.'
-      },
-      {
-        id: 'upsell-promo',
-        title: 'Upsell promo burst',
-        desc: 'Upsell Engine + referral template for add-on services after a job.',
+        id: 'social-media',
+        title: 'Simple social media for plumbers',
+        desc: 'Turn job photos into ready-made posts so you stay top of mind.',
         business: 'photobooth',
-        template: 'upsell-engine',
+        template: 'social',
         price: '£12',
-        jargon: 'photobooth pros selling extras',
-        guidance: 'After the booking, nudge them to add premium props with a limited-time bundle.'
+        outcomes: [
+          'Before/after post templates',
+          'Captions that feel human',
+          'Weekly promo prompts ready to use',
+        ],
       },
       {
-        id: 'event-social',
-        title: 'Event social push',
-        desc: 'Video Reel Generator + email marketing template to celebrate an event and drive referrals.',
-        business: 'photobooth',
-        template: 'email-marketing',
+        id: 'paperwork',
+        title: 'Keep your paperwork under control',
+        desc: 'Automate invoices, reminders, and receipts so evenings stay free.',
+        business: 'cleaning',
+        template: 'invoice',
         price: '£12',
-        jargon: 'event hosts craving hype clips',
-        guidance: 'Send the reel plus a referral link before midnight to keep the momentum going.'
+        outcomes: [
+          'Auto invoicing workflow',
+          'Late payment reminders that stay polite',
+          'Quick profit-tracking snapshot',
+        ],
+      },
+      {
+        id: 'repeat-customers',
+        title: 'Keep your customers coming back',
+        desc: 'Send follow-ups and annual reminders that turn one-offs into loyal customers.',
+        business: 'cleaning',
+        template: 'retention',
+        price: '£12',
+        outcomes: [
+          'Job follow-ups to stay top of mind',
+          'Seasonal service reminders',
+          'Maintenance check prompts',
+        ],
+      },
+      {
+        id: 'easy-routine',
+        title: 'Run your plumbing business the easy way',
+        desc: 'Pull the systems together—daily habits, weekly wins, and “rush hour” plans.',
+        business: 'cleaning',
+        template: 'routine',
+        price: '£12',
+        outcomes: [
+          'Daily and weekly routine checklists',
+          'Mid-week rescue plan for busy times',
+          'Crew notes for handing off jobs',
+        ],
+      },
+      {
+        id: 'start-plan',
+        title: 'A clear plan to start today',
+        desc: 'Follow a short checklist and use free tools to get rolling fast.',
+        business: 'cleaning',
+        template: 'start-plan',
+        price: '£12',
+        outcomes: [
+          'Step-by-step launch checklist',
+          'Free tools and quick wins',
+          '“Start here” section for busy plumbers',
+        ],
       },
     ]
 
@@ -649,14 +700,18 @@
       if (!playbookGrid) return
       playbookGrid.innerHTML = ''
       playbooks.forEach((book) => {
+        const outcomes = (book.outcomes || [])
+          .map((item) => `<li>${item}</li>`)
+          .join('')
         const card = document.createElement('article')
         card.innerHTML = `
           <h3>${book.title}</h3>
           <p class="playbook-description">${book.desc}</p>
-          <p class="playbook-jargon">For ${book.jargon}</p>
-          <p class="playbook-guidance">Guidance: ${book.guidance}</p>
-          <p class="playbook-price">${book.price} / playbook</p>
-          <button class="pill mini run-playbook" data-book="${book.id}">Run this playbook</button>
+          <ul class="playbook-outcomes">${outcomes}</ul>
+          <div class="playbook-footer">
+            <p class="playbook-price">${book.price} / playbook</p>
+            <button class="pill mini run-playbook" data-book="${book.id}">Run this playbook</button>
+          </div>
         `
         playbookGrid.appendChild(card)
       })
@@ -1022,6 +1077,23 @@ Status: ${latestDashboardSnapshot.status}
     loadOnboarding()
     loadDashboard()
     loadVerticalStats()
+    loadPlaybookStats()
+
+    const tabButtons = document.querySelectorAll('.tab-button')
+    const tabPanels = document.querySelectorAll('.tab-panel')
+
+    const activateTab = (tab) => {
+      tabButtons.forEach((button) => {
+        button.classList.toggle('active', button.dataset.tab === tab)
+      })
+      tabPanels.forEach((panel) => {
+        panel.classList.toggle('hidden', panel.dataset.tabContent !== tab)
+      })
+    }
+
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', () => activateTab(button.dataset.tab))
+    })
     loadPlaybookStats()
   </script>
 </body>
