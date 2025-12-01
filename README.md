@@ -57,6 +57,10 @@ The console now ships with ten plumber-friendly playbooks priced at £12 each. E
 
 The layout has also shifted to tabbed panels (Playbooks, Dashboard, Pricing, Insights) so the most important sections show in digestible chunks instead of one long page. This keeps the experience light, structured, and easy to navigate for non-technical teams.
 
+## Login experience
+
+`/login.html` is a lightweight welcome screen for lifetime-access customers. It hits `/api/stripe/check-lifetime-access?email=...`, stores the confirmed tier, and then routes to `/`. If the endpoint replies with `hasLifetimeAccess:true`, the client automatically redirects to the console; otherwise it surfaces a friendly error message encouraging the operator to contact support.
+
 ## Tiered pricing guide
 
 We now display three tiers in the console: Base (£90/mo) for voice/booking/lead automation, Growth (£150/mo) for marketing/review/upsell pipelines plus two included playbooks, and Premium (£220/mo) which adds course delivery automation, WhatsApp insights, and video reel generation. Each tier includes unlimited dashboards and the AI Growth Toolkit; extra playbooks stay at £12 each so customers can expand without big backend changes.

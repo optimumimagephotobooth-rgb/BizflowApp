@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BizflowApp Login</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="login-body">
+  <main class="login-card">
+    <h1>BizflowApp</h1>
+    <p class="muted">Sign in to your Premium account</p>
+
+    <form id="login-form" class="login-form">
+      <label for="email">Email Address</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="befittingfuneralhome1@gmail.com"
+        required
+      />
+      <button type="submit" class="pill primary">Sign In</button>
+      <p id="status" class="login-status muted"></p>
+    </form>
+
+    <p class="muted small">No password needed. We'll verify your access and redirect you.</p>
+  </main>
+
+  <script>
+    const form = document.getElementById('login-form');
+    const statusEl = document.getElementById('status');
+    const emailInput = document.getElementById('email');
+
+    const displayStatus = (text, isError) => {
+      statusEl.textContent = text;
+      statusEl.classList.toggle('error', isError);
+      statusEl.classList.toggle('success', !isError);
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const email = emailInput.value.trim().toLowerCase();
+      if (!email) {
+        displayStatus('Enter a valid email to continue.', true);
+        return;
+      }
+
+      displayStatus('Checking lifetime access…', false);
+      try {
+        const response = await fetch(
+          `/api/stripe/check-lifetime-access?email=${encodeURIComponent(email)}`,
+        );
+        if (!response.ok) {
+          throw new Error(`Server responded ${response.status}`);
+        }
+        const payload = await response.json();
+        if (payload?.hasLifetimeAccess) {
+          localStorage.setItem('bizflow_email', email);
+          localStorage.setItem('bizflow_tier', payload.tier || 'premium');
+          displayStatus('Access confirmed — redirecting…', false);
+          window.location.href = '/';
+          return;
+        }
+
+        displayStatus('Email not recognized. Contact support for access.', true);
+      } catch (error) {
+        console.error('Login check failed', error);
+        displayStatus('Unable to verify access right now. Try again in a moment.', true);
+      }
+    });
+  </script>
+</body>
+
+</html>
+
