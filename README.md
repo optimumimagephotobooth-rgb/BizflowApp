@@ -47,7 +47,7 @@ The same stack works for any service business: plumbing, electricians, hair salo
 
 ## Growth toolkit
 
-Inside `/` you’ll now find an “AI Growth Toolkit” that lists every packaged service (AI Voice Assistant, Booking System, Lead Generator, Email Marketing, Review Management, Retention, Upsell, Quote Follow-ups, Referral, Video Reel Generator) with pricing (just `£29.99` per tool so each module feels affordable). Each card lets you choose the matching vertical—when you click “Activate”, the UI focuses the checklist, dashboards, and SendGrid widget on that business line so the toolkit feels like a real product catalog.
+Inside `/` you’ll now find an “AI Growth Toolkit” that lists every packaged service (AI Voice Assistant, Booking System, Lead Generator, Email Marketing, Review Management, Retention, Upsell, Quote Follow-ups, Referral, Video Reel Generator) with pricing (just `£29.99/month` per tool so each module feels affordable). Each card lets you choose the matching vertical—when you click “Activate”, the UI focuses the checklist, dashboards, and SendGrid widget on that business line so the toolkit feels like a real product catalog.
 
 The customer interaction form now ships with pre-built AI marketing templates (capture course links, review requests, booking confirmations, lead follow-ups, upsell pitches). Selecting a template auto-populates the message and tags the interaction with the correct `business_type`, so every prompt turns into measurable pipeline activity.
 
