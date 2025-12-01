@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BizflowApp Onboarding Console</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="hero-copy">
+      <p class="eyebrow">BizflowApp</p>
+      <h1>Unified SaaS engine for Cleaning, Photobooth, and the Gold Wealth Academy course storefront</h1>
+      <p>The Gold Wealth Academy e-book and course experience sits adjacent to the AI Growth Engine, keeping the learning storefront separate while the agent powers bookings, tips, and follow-ups.</p>
+      <div class="hero-actions">
+        <a href="#onboarding-card" class="pill primary">Try onboarding console</a>
+        <a href="#dashboard-card" class="pill ghost">View dashboard</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <p class="stat-label">AI Experience Agent</p>
+      <p class="stat-value">Custom domain ready</p>
+      <button id="refresh-dashboard" class="pill">Refresh dashboard</button>
+    </div>
+  </header>
+
+  <section class="vertical-selector">
+    <label for="business-selector">Pick your business type</label>
+    <select id="business-selector">
+      <option value="cleaning">Cleaning Services</option>
+      <option value="photobooth">Photobooth Business</option>
+      <option value="courses">Gold Wealth Academy</option>
+    </select>
+    <p id="vertical-description" class="muted">Focus on bookings, confirmations, and AI follow-ups.</p>
+  </section>
+
+  <section class="story-card">
+    <div>
+      <h2>Bob the plumber skipped tech school—he just wanted more jobs.</h2>
+      <p>Bob never did IT after 7th grade, but BizflowApp lets him run voice assistants, lead-gen prompts, and review requests without learning anything new. He clicks a playbook, the ready-made message drops in, and his dashboard updates with the new profit. No scary AI lingo—just a tool that speaks plumber.</p>
+      <p class="helper-copy">See how Bob goes from missed calls to steady growth with our simple playbooks.</p>
+    </div>
+    <div class="story-steps">
+      <div><strong>1.</strong> Pick a playbook that fits your day (like “Lead blitz”).</div>
+      <div><strong>2.</strong> Press Run—the message and workflow pre-fill for you.</div>
+      <div><strong>3.</strong> Watch Delta badges, WhatsApp shares, and KPI posts prove the ROI.</div>
+    </div>
+  </section>
+
+  <section class="video-card">
+    <div class="card-head">
+      <h2>See BizflowApp in action</h2>
+      <p>Watch a quick clip showing how a real plumber runs playbooks without learning tech.</p>
+    </div>
+    <video autoplay muted loop playsinline preload="metadata" poster="/video-poster.jpg">
+      <source src="/BizflowApp_Simple_Business.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="hero-features">
+    <div class="feature-card">
+      <h3>Cleaning Services</h3>
+      <p>Streamline bookings, assign teams, send reminders, and log feedback from Supabase-managed scheduling.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Photobooth Business</h3>
+      <p>Manage rentals, event staff, and the Gold Wealth Academy brand across locations with real-time tip/donation views.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Gold Wealth Academy (course storefront)</h3>
+      <p>Deliver e-books, send course access links via SendGrid, and track digital orders with Stripe/Supabase while keeping course fulfillment distinct from the AI agent.</p>
+    </div>
+  </section>
+
+  <section class="card security-card">
+    <div class="card-head">
+      <h2>Security & trust</h2>
+      <p>Fortified for service businesses: encrypted data, access controls, and reliable uptime.</p>
+    </div>
+    <div class="security-grid">
+      <div class="badge">🔒 PCI-aligned</div>
+      <div class="badge">🛡️ API key protection</div>
+      <div class="badge">🗂️ RLS-ready Supabase</div>
+      <div class="badge">🧰 Weekly audits</div>
+      <div class="badge">⚙️ 99.9% uptime</div>
+    </div>
+  </section>
+
+  <section class="service-carousel">
+    <h2>Works for any service business</h2>
+    <div class="service-grid">
+      <span>🔧 Plumbing services</span>
+      <span>💡 Electrician services</span>
+      <span>💇 Hair salons / barbershops</span>
+      <span>🏋️ Fitness studios / personal training</span>
+      <span>🚗 Car detailing / auto services</span>
+      <span>🏠 HVAC / heating services</span>
+      <span>🌳 Landscaping services</span>
+      <span>🎓 Tutoring / online courses</span>
+      <span>📸 Photography services</span>
+      <span>💅 Nail salons</span>
+    </div>
+  </section>
+
+  <section class="card tier-card" id="pricing-card">
+    <div class="card-head">
+      <h2>Tiered pricing plans</h2>
+      <p>Pick the level that matches your growth stage. All tiers include the console, onboarding, and dashboards. Add £12 playbooks as needed.</p>
+    </div>
+    <div class="tier-grid" id="tier-grid"></div>
+  </section>
+
+  <section class="card roi-card">
+    <div class="card-head">
+      <h2>ROI proof</h2>
+      <p>Every playbook activation refreshes the dashboard, updates delta badges, and lets you share the KPI snapshot so you see the impact before you pay.</p>
+    </div>
+    <div class="roi-points">
+      <p>✅ Base tier absorbs call/booking automation so you skip hiring £1k/month staff.</p>
+      <p>✅ Growth tier nudges reviews, upsells, and retention—watch the delta badges climb after each playbook.</p>
+      <p>✅ Premium tier adds course delivery + video reels; the WhatsApp share button lets you broadcast wins instantly.</p>
+    </div>
+    <div class="roi-banner">
+      <p>Annual payment (2 months free) + one free £12 playbook for 30 days when you join today.</p>
+    </div>
+    <div class="offer-card">
+      <h3>Limited-time offer</h3>
+      <p id="offer-countdown">Offer ends soon—claim free months.</p>
+      <button id="claim-offer" class="pill mini">Claim 2 months free</button>
+      <p id="offer-feedback" class="muted"></p>
+    </div>
+  </section>
+
+  <section class="card engagement-card" id="engagement-card">
+    <div class="card-head">
+      <h2>Playbook engagement</h2>
+      <p>We highlight the scripts your team runs most so best sellers are front and center.</p>
+    </div>
+    <ul id="engagement-list"></ul>
+  </section>
+
+  <section class="card vertical-stats-card">
+    <div class="card-head">
+      <h2>Results by business line</h2>
+      <p>Track Ai interactions, course deliveries, and progress towards your vertical goals.</p>
+    </div>
+    <div class="grid" id="vertical-stats"></div>
+  </section>
+
+  <section class="verticals">
+    <div class="vertical">
+      <h2>Customer booking & ops</h2>
+      <p>Cleaning and photobooth admins inherit unified dashboards, role-based access, and automatic confirmations—plus AI follow-up suggestions through the Experience Agent.</p>
+    </div>
+    <div class="vertical">
+      <h2>E-commerce & courses</h2>
+      <p>Gold Wealth Academy sells digital content, handles Stripe payments, and automatically emails secure access links. Hand the Experience Agent the job of follow-up to close more upsells.</p>
+    </div>
+    <div class="vertical">
+      <h2>Analytics & loyalty</h2>
+      <p>Dashboards track total bookings, tips, course sales, and agent interactions at a glance. Feed every KPI into `/api/dashboard/summary` to keep stakeholders informed.</p>
+    </div>
+  </section>
+
+  <section class="course-widget">
+    <div class="course-copy">
+      <h2>Gold Wealth Academy stays separate</h2>
+      <p>This course storefront is adjacent to the AI Growth Engine. Log each SendGrid delivery here so the experience stays visible without confusing the course workflow.</p>
+      <p id="course-status" class="muted">No course deliveries logged yet.</p>
+    </div>
+    <form id="course-notify-form" class="form-grid">
+      <label>
+        Customer email
+        <input type="email" id="course-email" placeholder="student@example.com" required>
+      </label>
+      <label>
+        Course title
+        <input type="text" id="course-title" placeholder="Gold Wealth Blueprint" required>
+      </label>
+      <label>
+        SendGrid note
+        <textarea id="course-note" rows="2" placeholder="Access link delivered via SendGrid"></textarea>
+      </label>
+      <button type="submit">Log course delivery</button>
+    </form>
+  </section>
+
+  <section class="course-widget">
+    <div class="course-copy">
+      <h2>Gold Wealth Academy stays separate</h2>
+      <p>The Gold Wealth Academy course platform is different from the AI Growth Engine, but now sits beside it in Replit. Use this section to log course deliveries, track SendGrid confirmations, and keep the course brand distinct.</p>
+      <p id="course-status" class="muted">No course deliveries logged yet.</p>
+    </div>
+    <form id="course-notify-form" class="form-grid">
+      <label>
+        Customer email
+        <input type="email" id="course-email" placeholder="student@example.com" required>
+      </label>
+      <label>
+        Course title
+        <input type="text" id="course-title" placeholder="Gold Wealth Blueprint" required>
+      </label>
+      <label>
+        SendGrid note
+        <textarea id="course-note" rows="2" placeholder="SendGrid confirmed access link"></textarea>
+      </label>
+      <button type="submit">Log course delivery</button>
+    </form>
+  </section>
+
+  <section class="card growth-toolkit" id="growth-toolkit-card">
+    <div class="card-head">
+      <h2>AI Growth Toolkit</h2>
+      <p>Pick a playbook, press “Activate,” and the app handles the rest—no big tech skills needed.</p>
+    </div>
+    <div class="toolkit-grid" id="toolkit-grid"></div>
+    <p class="helper-copy">Each card contains a friendly script and guidance—click “Activate” to see the KPIs tick up.</p>
+  </section>
+
+  <section class="card playbook-card" id="playbook-card">
+    <div class="card-head">
+      <h2>Recommended playbooks</h2>
+      <p>Launch sequences for lead capture, bookings, upsells, and referrals without writing extra copy.</p>
+    </div>
+    <div class="playbook-grid" id="playbook-grid"></div>
+    <p class="helper-copy">Playbooks speak your language—run them and we’ll automate the boring bits.</p>
+  </section>
+
+  <section class="card insights-card" id="insights-card">
+    <div class="card-head">
+      <h2>AI insights & alerts</h2>
+      <p id="insights-summary" class="muted">We’ll surface action-ready growth ideas after every refresh.</p>
+    </div>
+    <div class="insight-actions">
+      <button id="whatsapp-share" class="pill mini">Share KPI via WhatsApp</button>
+      <button id="notify-teams" class="pill mini ghost">Copy quick alert</button>
+      <span id="alert-feedback" class="muted"></span>
+    </div>
+    <p class="helper-copy">We craft the short update—share it, copy it, or just let it remind you why you’re winning.</p>
+  </section>
+
+  <section class="card growth-card" id="growth-checklist-card">
+    <div class="card-head">
+      <h2>AI growth checklist</h2>
+      <p>Follow these trust-building steps to confirm the Experience Agent is driving bookings, tips, and course sales.</p>
+      <p id="growth-tip" class="muted">Focus on bookings, confirmations, and AI follow-ups.</p>
+    </div>
+    <ul class="checklist" id="growth-checklist"></ul>
+  </section>
+
+  <main>
+    <section class="card" id="onboarding-card">
+      <div class="card-head">
+        <h2>Guided onboarding steps</h2>
+        <p id="onboarding-status">Loading steps…</p>
+      </div>
+      <div class="grid" id="onboarding-steps"></div>
+      <form id="progress-form" class="form-grid">
+        <h3>Mark step complete</h3>
+        <label>
+          User ID
+          <input type="text" id="progress-user" placeholder="user_123" required>
+        </label>
+        <label>
+          Step
+          <select id="progress-step" required>
+            <option value="">Select step</option>
+          </select>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="progress-completed" checked>
+          Completed
+        </label>
+        <label>
+          Metadata (JSON)
+          <textarea id="progress-meta" rows="2" placeholder='{"source":"console"}'></textarea>
+        </label>
+        <button type="submit" class="primary">Save progress</button>
+        <div class="form-feedback" id="progress-feedback"></div>
+      </form>
+    </section>
+
+    <section class="card" id="dashboard-card">
+      <h2>Live dashboard summary</h2>
+      <div class="summary-grid" id="dashboard-summary">
+        <div>
+          <span>Total interactions</span>
+          <strong id="metric-total">—</strong>
+          <span class="delta-badge" id="delta-total">—</span>
+        </div>
+        <div>
+          <span>Unique users</span>
+          <strong id="metric-unique">—</strong>
+          <span class="delta-badge" id="delta-unique">—</span>
+        </div>
+        <div>
+          <span>Status</span>
+          <strong id="metric-status">—</strong>
+        </div>
+      </div>
+      <p id="dashboard-note" class="muted">Pulling stats…</p>
+      <div class="share-actions">
+        <button id="share-summary-btn" class="pill primary">Copy KPI snapshot</button>
+        <span class="muted" id="share-feedback"></span>
+      </div>
+
+      <div class="grid">
+        <div>
+          <h3>Recent interactions</h3>
+          <ul id="recent-interactions"></ul>
+        </div>
+        <div>
+          <h3>Customer interaction log</h3>
+          <form id="interaction-form" class="form-grid">
+            <label>
+              AI template
+              <select id="prompt-template">
+                <option value="">Choose a template</option>
+              </select>
+            </label>
+            <label>
+              User ID
+              <input type="text" id="interaction-user" placeholder="user_123" required>
+            </label>
+            <label>
+              Message
+              <textarea id="interaction-message" rows="2" required></textarea>
+            </label>
+            <label>
+              Agent response
+              <textarea id="interaction-response" rows="2"></textarea>
+            </label>
+            <button type="submit">Save interaction</button>
+            <div class="form-feedback" id="interaction-feedback"></div>
+          </form>
+          <form id="interaction-query" class="form-grid">
+            <label>
+              Fetch history for user
+              <input type="text" id="history-user" placeholder="user_123" required>
+            </label>
+            <button type="submit">Load history</button>
+          </form>
+          <ul id="history-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Endpoints available for plugging into your SaaS demos.</p>
+  </footer>
+
+  <script>
+    const verticalDescriptions = {
+      cleaning: 'Focus on bookings, confirmations, and AI follow-ups.',
+      photobooth: 'Boost tips and bookings with branded conversations.',
+      courses: 'Log SendGrid deliveries so every course sale feels polished.',
+    }
+
+    const tiers = [
+      {
+        id: 'base',
+        title: 'Base tier',
+        price: '£90/mo',
+        desc: 'Voice Assistant + Booking System + Lead Generator. Perfect for capturing bookings and leads.',
+      },
+      {
+        id: 'growth',
+        title: 'Growth tier',
+        price: '£150/mo',
+        desc: 'Includes Email Marketing, Review Management, Retention, Upsells plus 2 playbooks.',
+      },
+      {
+        id: 'premium',
+        title: 'Premium tier',
+        price: '£220/mo',
+        desc: 'Everything above plus Course Delivery automation, WhatsApp insights, and Video Reel Generator.',
+      },
+    ]
+
+    const tierGrid = document.getElementById('tier-grid')
+
+    const renderTiers = () => {
+      if (!tierGrid) return
+      tierGrid.innerHTML = ''
+      tiers.forEach((tier) => {
+        const card = document.createElement('article')
+        card.innerHTML = `
+          <h3>${tier.title}</h3>
+          <p class="tier-price">${tier.price}</p>
+          <p>${tier.desc}</p>
+          <button class="pill mini">Choose ${tier.title}</button>
+        `
+        tierGrid.appendChild(card)
+      })
+    }
+
+
+    const onboardingStepsEl = document.getElementById('onboarding-steps')
+    const onboardingStatus = document.getElementById('onboarding-status')
+    const stepSelect = document.getElementById('progress-step')
+    const progressForm = document.getElementById('progress-form')
+    const progressFeedback = document.getElementById('progress-feedback')
+    const interactionForm = document.getElementById('interaction-form')
+    const interactionFeedback = document.getElementById('interaction-feedback')
+    const dashboardTotal = document.getElementById('metric-total')
+    const dashboardUnique = document.getElementById('metric-unique')
+    const dashboardStatus = document.getElementById('metric-status')
+    const dashboardNote = document.getElementById('dashboard-note')
+    const recentInteractions = document.getElementById('recent-interactions')
+    const historyForm = document.getElementById('interaction-query')
+    const historyList = document.getElementById('history-list')
+    const refreshButton = document.getElementById('refresh-dashboard')
+    const historyUserInput = document.getElementById('history-user')
+    const growthChecklistEl = document.getElementById('growth-checklist')
+    const shareSummaryBtn = document.getElementById('share-summary-btn')
+    const shareFeedback = document.getElementById('share-feedback')
+    const businessSelector = document.getElementById('business-selector')
+    const verticalDescription = document.getElementById('vertical-description')
+    const verticalStatsGrid = document.getElementById('vertical-stats')
+    const deltaTotalEl = document.getElementById('delta-total')
+    const deltaUniqueEl = document.getElementById('delta-unique')
+    const growthTip = document.getElementById('growth-tip')
+    const courseForm = document.getElementById('course-notify-form')
+    const courseStatus = document.getElementById('course-status')
+    const courseEmail = document.getElementById('course-email')
+    const courseTitle = document.getElementById('course-title')
+    const courseNote = document.getElementById('course-note')
+    const toolkitGrid = document.getElementById('toolkit-grid')
+    let latestDashboardSnapshot = null
+    let previousDashboardSnapshot = null
+    let activeBusinessType = businessSelector?.value || 'cleaning'
+
+    const getHeaders = () => {
+      const headers = { 'Content-Type': 'application/json' }
+      if (window.BIZFLOW_API_KEY) {
+        headers['x-api-key'] = window.BIZFLOW_API_KEY
+      }
+      return headers
+    }
+
+    const setActiveBusinessType = (type) => {
+      activeBusinessType = type
+      businessSelector.value = type
+      verticalDescription.textContent = verticalDescriptions[type] || verticalDescriptions.cleaning
+      growthTip.textContent = `AI priority: ${verticalDescriptions[type]}`
+      document.body.setAttribute('data-business-type', type)
+      highlightVerticalCard(type)
+      selectTemplateForService(type)
+    }
+
+    const highlightVerticalCard = (type) => {
+      const cards = verticalStatsGrid.querySelectorAll('.vertical-card')
+      cards.forEach((card) => {
+        card.classList.toggle('active', card.dataset.vertical === type)
+      })
+    }
+
+    const toolkitServices = [
+      { label: 'AI Voice Assistant', price: '£70/month', description: '24/7 phone answering', business_type: 'cleaning' },
+      { label: 'AI Booking System', price: '£60/month', description: 'Automate scheduling + confirmations', business_type: 'cleaning' },
+      { label: 'AI Lead Generator', price: '£60/month', description: 'Capture new leads via AI prompts', business_type: 'photobooth' },
+      { label: 'Email Marketing', price: '£50/month', description: 'Send campaign + course links via SendGrid', business_type: 'courses' },
+      { label: 'Review Management', price: '£50/month', description: 'Automate review asks after each job', business_type: 'photobooth' },
+      { label: 'Retention System', price: '£45/month', description: 'Follow ups for recurring bookings', business_type: 'cleaning' },
+      { label: 'Upsell Engine', price: '£35/month', description: 'Suggest add-ons mid-event', business_type: 'photobooth' },
+      { label: 'Quote Follow-ups', price: '£40/month', description: 'Touch every quote with AI reminders', business_type: 'cleaning' },
+      { label: 'Referral Engine', price: '£30/month', description: 'Prompt happy customers for referrals', business_type: 'photobooth' },
+      { label: 'Video Reel Generator', price: '£20/month', description: 'Create quick reels for social proof', business_type: 'photobooth' },
+    ]
+
+    const selectTemplateForService = (service) => {
+      const option = [...promptTemplateSelect.options].find((opt) => opt.dataset.service === service)
+      if (option) {
+        promptTemplateSelect.value = option.value
+        applyTemplate(option.value)
+      }
+    }
+
+    const offerCountdownEl = document.getElementById('offer-countdown')
+    const claimOfferBtn = document.getElementById('claim-offer')
+    const offerFeedback = document.getElementById('offer-feedback')
+
+    const updateOfferCountdown = () => {
+      const expiry = new Date()
+      expiry.setDate(expiry.getDate() + 7)
+      const diff = expiry - new Date()
+      const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
+      if (offerCountdownEl) {
+        offerCountdownEl.textContent = `Offer ends in ${days} day${days === 1 ? '' : 's'}`
+      }
+    }
+
+    claimOfferBtn?.addEventListener('click', () => {
+      if (offerFeedback) {
+        offerFeedback.textContent = 'Offer unlocked! Share the KPI snapshot to show the team the value.'
+      }
+      shareFeedback.textContent = 'Claimed 30-day playbook trial and annual discount—share this with prospects.'
+    })
+
+    const renderToolkit = () => {
+      if (!toolkitGrid) return
+      toolkitGrid.innerHTML = ''
+      toolkitServices.forEach((service) => {
+        const card = document.createElement('article')
+        card.className = 'toolkit-card'
+        card.innerHTML = `
+          <h3>${service.label}</h3>
+          <p class="price">${service.price}</p>
+          <p>${service.description}</p>
+          <button class="pick-service" data-business="${service.business_type}">Activate</button>
+        `
+        toolkitGrid.appendChild(card)
+      })
+    }
+
+    const promptTemplates = [
+      {
+        id: 'email-marketing',
+        label: 'Course access follow-up',
+        service: 'courses',
+        message: 'Hi {{name}}, your Gold Wealth Academy materials are ready. Click the link to unlock your lessons now!',
+      },
+      {
+        id: 'review-request',
+        label: 'Post-service review request',
+        service: 'photobooth',
+        message: 'Hope you loved the event! Please leave a review and share what stood out.',
+      },
+      {
+        id: 'voice-assistant',
+        label: 'Booking confirmation',
+        service: 'cleaning',
+        message: 'Thanks for booking with us! Your cleaner is scheduled for {{date}}. Reply YES to confirm.',
+      },
+      {
+        id: 'lead-generation',
+        label: 'AI lead follow-up',
+        service: 'cleaning',
+        message: 'Saw you requested an estimate. Would you like us to schedule a visit this week?',
+      },
+      {
+        id: 'upsell-engine',
+        label: 'Upsell suggestion',
+        service: 'photobooth',
+        message: 'Add a custom backdrop or highlight reel to your booking and save 10%. Reply to upgrade.',
+      },
+    ]
+
+    const toolkitGrid = document.getElementById('toolkit-grid')
+    const promptTemplateSelect = document.getElementById('prompt-template')
+    const playbookGrid = document.getElementById('playbook-grid')
+
+    const renderPromptTemplates = () => {
+      promptTemplateSelect.innerHTML = '<option value="">Choose a template</option>'
+      promptTemplates.forEach((template) => {
+        const option = document.createElement('option')
+        option.value = template.id
+        option.textContent = `${template.label} (${template.price || 'Included'})`
+        option.dataset.message = template.message
+        option.dataset.service = template.service
+        promptTemplateSelect.appendChild(option)
+      })
+    }
+
+    const applyTemplate = (templateId) => {
+      const template = promptTemplates.find(t => t.id === templateId)
+      if (template) {
+        document.getElementById('interaction-message').value = template.message
+        setActiveBusinessType(template.service)
+      }
+    }
+
+    toolkitGrid?.addEventListener('click', (event) => {
+      const target = event.target.closest('.pick-service')
+      if (target) {
+        setActiveBusinessType(target.dataset.business)
+        shareFeedback.textContent = `Ready to activate ${target.previousElementSibling.textContent.trim()} for ${target.dataset.business}.`
+      }
+    })
+
+    const playbooks = [
+      {
+        id: 'lead-gen',
+        title: 'Lead generation blitz',
+        desc: 'Voice + lead generator + templated follow-up to convert inbound interest.',
+        business: 'cleaning',
+        template: 'lead-generation',
+        price: '£12',
+        jargon: 'cleaning crews chasing new jobs',
+        guidance: 'Reroute every inquiry into a yes-within-24-hours text and auto-confirm slot.'
+      },
+      {
+        id: 'course-sell',
+        title: 'Course upsell + email',
+        desc: 'Email Marketing + course delivery prompt + KPI snapshot share.',
+        business: 'courses',
+        template: 'email-marketing',
+        price: '£12',
+        jargon: 'Gold Wealth Academy course launch',
+        guidance: 'Send access link + social proof screenshot to reduce manual emails.'
+      },
+      {
+        id: 'review-referral',
+        title: 'Review & referral loop',
+        desc: 'Review Management + Referral Engine template for happy guests.',
+        business: 'photobooth',
+        template: 'review-request',
+        price: '£12',
+        jargon: 'photobooth hosts wanting five-star bursts',
+        guidance: 'Drop a “thank you” + referral ask right after the event reel drops.'
+      },
+      {
+        id: 'retention-check',
+        title: 'Retention check-in',
+        desc: 'Retention System + quote follow-up template to keep recurring customers booked.',
+        business: 'HVAC',
+        template: 'lead-generation',
+        price: '£12',
+        jargon: 'HVAC crews filling seasonal slots',
+        guidance: 'Ping thermostat customers quarterly with a tune-up reminder and limited-time discount.'
+      },
+      {
+        id: 'upsell-promo',
+        title: 'Upsell promo burst',
+        desc: 'Upsell Engine + referral template for add-on services after a job.',
+        business: 'photobooth',
+        template: 'upsell-engine',
+        price: '£12',
+        jargon: 'photobooth pros selling extras',
+        guidance: 'After the booking, nudge them to add premium props with a limited-time bundle.'
+      },
+      {
+        id: 'event-social',
+        title: 'Event social push',
+        desc: 'Video Reel Generator + email marketing template to celebrate an event and drive referrals.',
+        business: 'photobooth',
+        template: 'email-marketing',
+        price: '£12',
+        jargon: 'event hosts craving hype clips',
+        guidance: 'Send the reel plus a referral link before midnight to keep the momentum going.'
+      },
+    ]
+
+    const renderPlaybooks = () => {
+      if (!playbookGrid) return
+      playbookGrid.innerHTML = ''
+      playbooks.forEach((book) => {
+        const card = document.createElement('article')
+        card.innerHTML = `
+          <h3>${book.title}</h3>
+          <p class="playbook-description">${book.desc}</p>
+          <p class="playbook-jargon">For ${book.jargon}</p>
+          <p class="playbook-guidance">Guidance: ${book.guidance}</p>
+          <p class="playbook-price">${book.price} / playbook</p>
+          <button class="pill mini run-playbook" data-book="${book.id}">Run this playbook</button>
+        `
+        playbookGrid.appendChild(card)
+      })
+    }
+
+    playbookGrid?.addEventListener('click', async (event) => {
+      const target = event.target.closest('.run-playbook')
+      if (!target) return
+      const playbook = playbooks.find((book) => book.id === target.dataset.book)
+      if (!playbook) return
+      setActiveBusinessType(playbook.business)
+      promptTemplateSelect.value = playbook.template
+      applyTemplate(playbook.template)
+      shareFeedback.textContent = `${playbook.title} queued—check the checklist and share the KPI snapshot.`
+      await fetch('/api/playbook-run', {
+        method: 'POST',
+        headers: getHeaders(),
+        body: JSON.stringify({ playbookId: playbook.id, business_type: playbook.business }),
+      })
+      loadPlaybookStats()
+    })
+
+    const handleToolkitActivation = (businessType) => {
+      selectTemplateForService(businessType)
+    }
+
+    promptTemplateSelect?.addEventListener('change', (event) => {
+      applyTemplate(event.target.value)
+    })
+
+    businessSelector.addEventListener('change', (event) => {
+      setActiveBusinessType(event.target.value)
+    })
+
+    const renderSteps = (data) => {
+      onboardingStepsEl.innerHTML = ''
+      stepSelect.innerHTML = '<option value="">Select step</option>'
+      data.steps.forEach((step) => {
+        const card = document.createElement('article')
+        card.className = 'rule-card'
+        card.innerHTML = `
+          <div class="icon">${step.icon}</div>
+          <div>
+            <h4>${step.title}</h4>
+            <p>${step.description}</p>
+          </div>
+        `
+        onboardingStepsEl.appendChild(card)
+
+        const option = document.createElement('option')
+        option.value = step.id
+        option.textContent = step.title
+        stepSelect.appendChild(option)
+      })
+      onboardingStatus.textContent = `Status: ${data.status}`
+      renderChecklist(data.steps)
+    }
+
+    const renderChecklist = (steps) => {
+      growthChecklistEl.innerHTML = ''
+      steps.forEach((step) => {
+        const li = document.createElement('li')
+        li.innerHTML = `
+          <h4>${step.title}</h4>
+          <p>${step.description}</p>
+          <button class="pill mini check-step" data-step="${step.id}">Mark ${step.title}</button>
+        `
+        growthChecklistEl.appendChild(li)
+      })
+    }
+
+    const whatsappShare = document.getElementById('whatsapp-share')
+    const notifyTeams = document.getElementById('notify-teams')
+    const alertFeedback = document.getElementById('alert-feedback')
+
+    const renderVerticalStats = (types) => {
+      verticalStatsGrid.innerHTML = ''
+      types.forEach((type) => {
+        const card = document.createElement('div')
+        card.className = 'vertical-card'
+        card.dataset.vertical = type.id
+        card.innerHTML = `
+          <div>
+            <h3>${type.label}</h3>
+            <p class="muted">Goal: ${type.goal} interactions</p>
+          </div>
+          <div class="vertical-metrics">
+            <span>${type.interactions || 0} interactions</span>
+            <span>${type.deliveries || 0} deliveries</span>
+          </div>
+          <button class="pill mini select-vertical" data-vertical="${type.id}">Track ${type.label}</button>
+        `
+        verticalStatsGrid.appendChild(card)
+      })
+      highlightVerticalCard(activeBusinessType)
+    }
+
+    const loadVerticalStats = async () => {
+      try {
+        const response = await fetch('/api/dashboard/verticals', { headers: getHeaders() })
+        const payload = await response.json()
+        if (payload.types) {
+          renderVerticalStats(payload.types)
+        }
+      } catch (error) {
+        verticalStatsGrid.innerHTML = '<p class="muted">Unable to load vertical stats.</p>'
+      }
+    }
+
+    const loadPlaybookStats = async () => {
+      const response = await fetch('/api/playbook-stats', { headers: getHeaders() })
+      if (!response.ok) {
+        return
+      }
+      const payload = await response.json()
+      const list = document.getElementById('engagement-list')
+      if (!list) return
+      list.innerHTML = ''
+      (payload.stats || []).forEach((stat) => {
+        const item = document.createElement('li')
+        item.innerHTML = `
+          <span>${stat.playbook_id}</span>
+          <strong>${stat.count}</strong>
+        `
+        list.appendChild(item)
+      })
+      if ((payload.stats || []).length === 0) {
+        list.innerHTML = '<li class="muted">No playbooks run yet.</li>'
+      }
+    }
+
+    const updateDeltaBadges = (payload) => {
+      if (!previousDashboardSnapshot) {
+        deltaTotalEl.textContent = '—'
+        deltaUniqueEl.textContent = '—'
+        return
+      }
+      const totalDelta = payload.totalInteractions - previousDashboardSnapshot.totalInteractions
+      const uniqueDelta = payload.uniqueUsers - previousDashboardSnapshot.uniqueUsers
+      deltaTotalEl.textContent = totalDelta === 0 ? '—' : `${totalDelta > 0 ? '+' : ''}${totalDelta}`
+      deltaUniqueEl.textContent = uniqueDelta === 0 ? '—' : `${uniqueDelta > 0 ? '+' : ''}${uniqueDelta}`
+    }
+
+    const loadOnboarding = async () => {
+      try {
+        const response = await fetch('/api/onboarding/steps', { headers: getHeaders() })
+        const payload = await response.json()
+        renderSteps(payload)
+      } catch (error) {
+        onboardingStatus.textContent = 'Unable to load steps'
+        onboardingStepsEl.innerHTML = '<p class="muted">Check logs or env vars</p>'
+      }
+    }
+
+    const loadDashboard = async () => {
+      try {
+        const response = await fetch('/api/dashboard/summary', { headers: getHeaders() })
+        const payload = await response.json()
+        previousDashboardSnapshot = latestDashboardSnapshot
+        latestDashboardSnapshot = payload
+
+        dashboardTotal.textContent = payload.totalInteractions ?? '—'
+        dashboardUnique.textContent = payload.uniqueUsers ?? '—'
+        dashboardStatus.textContent = payload.status
+        dashboardNote.textContent = payload.note || 'No data yet'
+
+        updateDeltaBadges(payload)
+
+        if (payload.verticalBreakdown) {
+          renderVerticalStats(payload.verticalBreakdown)
+        }
+
+        recentInteractions.innerHTML = (payload.recentInteractions || [])
+          .map(
+            (row) => `
+              <li>
+                <strong>${row.user_id}</strong>
+                <p>${row.user_message}</p>
+                <small>${row.agent_response || 'no response'} · ${new Date(row.created_at).toLocaleString()}</small>
+              </li>
+            `,
+          )
+          .join('')
+      } catch (error) {
+        dashboardNote.textContent = 'Dashboard unreachable. Check server logs.'
+      }
+      loadInsights()
+    }
+
+    const buildShareText = () => {
+      if (!latestDashboardSnapshot) return 'BizflowApp KPI snapshot'
+      return `BizflowApp KPI snapshot\nTotal interactions: ${latestDashboardSnapshot.totalInteractions}\nUnique users: ${latestDashboardSnapshot.uniqueUsers}\nStatus: ${latestDashboardSnapshot.status}`
+    }
+
+    const loadInsights = () => {
+      if (!latestDashboardSnapshot) return
+      const summaryText = latestDashboardSnapshot.totalInteractions > 0
+        ? `Great news! ${latestDashboardSnapshot.totalInteractions} interactions logged—send the snapshot to your team.`
+        : 'No interactions yet. Activate an AI module to see quick wins.'
+      document.getElementById('insights-summary').textContent = summaryText
+    }
+
+    whatsappShare?.addEventListener('click', () => {
+      const text = encodeURIComponent(buildShareText())
+      window.open(`https://wa.me/?text=${text}`, '_blank')
+    })
+
+    notifyTeams?.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(buildShareText())
+      alertFeedback.textContent = 'Copied alert text—share it with your team!'
+    })
+
+    progressForm.addEventListener('submit', async (event) => {
+      event.preventDefault()
+      progressFeedback.textContent = ''
+      const user_id = document.getElementById('progress-user').value.trim()
+      const step_id = stepSelect.value
+      const completed = document.getElementById('progress-completed').checked
+      const metadataValue = document.getElementById('progress-meta').value.trim()
+      let metadata = {}
+      try {
+        if (metadataValue) {
+          metadata = JSON.parse(metadataValue)
+        }
+      } catch (error) {
+        progressFeedback.textContent = 'Metadata must be valid JSON'
+        return
+      }
+
+      const response = await fetch('/api/onboarding/progress', {
+        method: 'POST',
+        headers: getHeaders(),
+        body: JSON.stringify({ user_id, step_id, completed, metadata, business_type: activeBusinessType }),
+      })
+      const payload = await response.json()
+      progressFeedback.textContent = payload.message || 'Saved!'
+      progressFeedback.classList.toggle('error', !payload.success)
+      loadDashboard()
+    })
+
+    interactionForm.addEventListener('submit', async (event) => {
+      event.preventDefault()
+      interactionFeedback.textContent = ''
+      const user_id = document.getElementById('interaction-user').value.trim()
+      const message = document.getElementById('interaction-message').value.trim()
+      const responseText = document.getElementById('interaction-response').value.trim()
+
+      const payload = await fetch('/api/interactions', {
+        method: 'POST',
+        headers: getHeaders(),
+        body: JSON.stringify({
+          user_id,
+          message,
+          response: responseText,
+          business_type: activeBusinessType,
+        }),
+      })
+      const result = await payload.json()
+      interactionFeedback.textContent = result.message || 'Saved!'
+      interactionFeedback.classList.toggle('error', !result.success)
+      loadDashboard()
+    })
+
+    growthChecklistEl.addEventListener('click', (event) => {
+      if (event.target.matches('.check-step')) {
+        const stepId = event.target.dataset.step
+        stepSelect.value = stepId
+        document.getElementById('progress-user').value = 'enterprise_user'
+        document.getElementById('progress-completed').checked = true
+        progressFeedback.textContent = `Ready to submit ${stepId}`
+      }
+    })
+
+    verticalStatsGrid.addEventListener('click', (event) => {
+      const target = event.target.closest('.select-vertical')
+      if (target) {
+        setActiveBusinessType(target.dataset.vertical)
+      }
+    })
+
+    shareSummaryBtn.addEventListener('click', async () => {
+      if (!latestDashboardSnapshot) {
+        shareFeedback.textContent = 'Wait for the dashboard to load first.'
+        return
+      }
+      const snapshot = `
+BizflowApp KPI snapshot
+Total interactions: ${latestDashboardSnapshot.totalInteractions}
+Unique users: ${latestDashboardSnapshot.uniqueUsers}
+Status: ${latestDashboardSnapshot.status}
+`
+      await navigator.clipboard.writeText(snapshot.trim())
+      shareFeedback.textContent = 'Copied! Paste into Slack or email to showcase Ai wins.'
+    })
+
+    historyForm.addEventListener('submit', async (event) => {
+      event.preventDefault()
+      historyList.innerHTML = '<li class="muted">Loading history…</li>'
+      const userId = historyUserInput.value.trim()
+      try {
+        const response = await fetch(`/api/interactions/${userId}`, { headers: getHeaders() })
+        const payload = await response.json()
+        if (!payload.success) {
+          historyList.innerHTML = `<li class="error">No history yet.</li>`
+          return
+        }
+        historyList.innerHTML =
+          payload.interactions.length === 0
+            ? '<li class="muted">Zero interactions yet.</li>'
+            : payload.interactions
+                .map(
+                  (row) => `
+                    <li>
+                      <strong>${row.user_message}</strong>
+                      <p>${row.agent_response || 'no response'}</p>
+                      <small>${new Date(row.created_at).toLocaleString()}</small>
+                    </li>
+                  `,
+                )
+                .join('')
+      } catch (error) {
+        historyList.innerHTML = '<li class="error">Unable to load history.</li>'
+      }
+    })
+
+    courseForm.addEventListener('submit', async (event) => {
+      event.preventDefault()
+      const payload = await fetch('/api/course-delivery', {
+        method: 'POST',
+        headers: getHeaders(),
+        body: JSON.stringify({
+          email: courseEmail.value.trim(),
+          courseTitle: courseTitle.value.trim(),
+          note: courseNote.value.trim(),
+        }),
+      })
+      const result = await payload.json()
+      if (result.success) {
+        courseStatus.textContent = result.emailSent
+          ? `Last delivery: ${courseTitle.value.trim()} → ${courseEmail.value.trim()} (email sent)`
+          : `Last delivery logged for ${courseTitle.value.trim()} (email not configured)`
+        courseForm.reset()
+        loadDashboard()
+      } else {
+        courseStatus.textContent = result.error || 'Unable to log course delivery yet.'
+      }
+    })
+
+    refreshButton.addEventListener('click', () => {
+      loadDashboard()
+      loadOnboarding()
+      loadVerticalStats()
+      loadInsights()
+      loadPlaybookStats()
+    })
+
+    renderPromptTemplates()
+    renderPlaybooks()
+    renderTiers()
+    updateOfferCountdown()
+    setActiveBusinessType(activeBusinessType)
+    renderToolkit()
+    loadOnboarding()
+    loadDashboard()
+    loadVerticalStats()
+    loadPlaybookStats()
+  </script>
+</body>
+
+</html>
+
